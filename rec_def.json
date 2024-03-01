@@ -1,0 +1,72 @@
+[
+    {
+        "system_size_kwh": 15,
+        "system_size_kw": 5,
+        "site_export_limit_kw": 5,
+        "rec_id": 666,
+        "ttl": 60
+    },
+    {
+        "system_size_kwh": 15,
+        "system_size_kw": 5,
+        "site_export_limit_kw": 5,
+        "rec_id": 667,
+        "ttl": 65
+    },
+    {
+        "system_size_kwh": 15,
+        "system_size_kw": 5,
+        "site_export_limit_kw": 5,
+        "rec_id": 668,
+        "ttl": 70
+    },
+    {
+        "system_size_kwh": 15,
+        "system_size_kw": 5,
+        "site_export_limit_kw": 5,
+        "rec_id": 669,
+        "ttl": 75
+    },
+    {
+        "system_size_kwh": 15,
+        "system_size_kw": 5,
+        "site_export_limit_kw": 5,
+        "rec_id": 670,
+        "ttl": 80
+    },
+    {
+        "system_size_kwh": 15,
+        "system_size_kw": 5,
+        "site_export_limit_kw": 5,
+        "rec_id": 671,
+        "ttl": 85
+    },
+    {
+        "system_size_kwh": 15,
+        "system_size_kw": 5,
+        "site_export_limit_kw": 5,
+        "rec_id": 672,
+        "ttl": 90
+    },
+    {
+        "system_size_kwh": 15,
+        "system_size_kw": 5,
+        "site_export_limit_kw": 5,
+        "rec_id": 673,
+        "ttl": 95
+    },
+    {
+        "system_size_kwh": 15,
+        "system_size_kw": 5,
+        "site_export_limit_kw": 5,
+        "rec_id": 674,
+        "ttl": 100
+    },
+    {
+        "system_size_kwh": 15,
+        "system_size_kw": 5,
+        "site_export_limit_kw": 5,
+        "rec_id": 675,
+        "ttl": 105
+    }
+]
