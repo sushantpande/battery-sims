@@ -17,7 +17,7 @@ class Ess:
     def __init__(self, interval, rec_id, system_size_kwh):
         self.rec_id = rec_id
         self.initial_soc = 60
-        self.schedule = None
+        self.schedule = []
         # percent of discharge per interval
         self.std_discharge_rate = 0
         self.interval = interval
@@ -28,6 +28,7 @@ class Ess:
         return (datetime.strptime(ts, '%Y-%m-%dT%H:%M:%SZ'))
 
     def add_schedule(self, new_schedule):
+        """
         rec_schedule = [
             {
                 'start_ts': '2024-03-01T17:00:00Z',
@@ -48,10 +49,9 @@ class Ess:
                 'state': 'charge'
             }
         ]
-
-        self.schedule = rec_schedule
-        print("+++++++++++++++++++++++", self.schedule)
-        # self.schedule.append(new_schedule)
+        """
+        # self.schedule = rec_schedule
+        self.schedule.append(new_schedule)
         self.schedule = sorted(self.schedule, key=lambda x: x['start_ts'])
 
         print('===========My Schedule is===============', self.schedule)
@@ -70,9 +70,7 @@ class Ess:
             self.soc_at_interval.append({
                 'rec_id': self.rec_id,
                 'start_ts': interval_start.isoformat() + 'Z',
-                # 'start_ts': interval_start,
                 'end_ts': interval_end.isoformat() + 'Z',
-                # 'end_ts': interval_end,
                 'state': 'idle',
                 'soc': self.initial_soc,
                 'kwh': self.initial_soc * self.system_size_kwh
